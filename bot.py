@@ -99,7 +99,7 @@ async def responder(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(f"O Juim está {verbo} lá em {cidade}")
         return
 
-    if "@opalabaiano " in texto_lower:        
+    if "@opalabaiano" in texto_lower:        
         await update.message.reply_text(f"O Carlotinha está transando... olhei aqui e é com {random.randint(2, 10)} gurias 👀")
         return
 
