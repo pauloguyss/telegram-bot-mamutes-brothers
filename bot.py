@@ -2,6 +2,7 @@ import os
 import re
 import random
 import logging
+import random
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
 
@@ -96,6 +97,10 @@ async def responder(update: Update, context: ContextTypes.DEFAULT_TYPE):
         verbo = random.choice(VERBOS)
         cidade = random.choice(CIDADES)
         await update.message.reply_text(f"O Juim está {verbo} lá em {cidade}")
+        return
+
+    if "@opalabaiano " in texto_lower:        
+        await update.message.reply_text(f"O Carlotinha está transando... olhei aqui e é com {random.randint(2, 10)} gurias 👀")
         return
 
 
