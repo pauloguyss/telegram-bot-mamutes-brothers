@@ -103,7 +103,7 @@ async def responder(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(f"O Carlotinha está transando... olhei aqui e é com {random.randint(2, 10)} gurias 👀")
         return
 
-    elif "to comprometido" in texto_lower or "ele disse que tá comprometido" in texto.lower:
+    elif "to comprometido" in texto_lower or "ele disse que tá comprometido" in texto_lower:
         await update.message.reply_text("Para de mentir, filho da puta de bosta")
         return
 
